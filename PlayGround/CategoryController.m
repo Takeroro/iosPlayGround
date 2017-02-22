@@ -127,26 +127,32 @@
         case 6: {
             PlayInvocationVC *vc = [[PlayInvocationVC alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         case 7: {
             PlayWithWindowViewController *vc = [[PlayWithWindowViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         case 8: {
             AnimationVC *vc = [[AnimationVC alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         case 9: {
             ExceptionViewController *vc = [[ExceptionViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         case 10: {
             PlayWithNewAViewFromNibVC *vc = [[PlayWithNewAViewFromNibVC alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         case 11: {
             AppStoreDemoViewController *vc = [[AppStoreDemoViewController alloc]init];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
 
     }
