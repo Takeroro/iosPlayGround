@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55274D441E80D47E0095AC1F /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55274D431E80D47E0095AC1F /* RunTimeViewController.m */; };
+		55274D481E80E1120095AC1F /* MethodsHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = 55274D471E80E1120095AC1F /* MethodsHooker.m */; };
+		55274D4C1E80FF300095AC1F /* NSObject+RT.m in Sources */ = {isa = PBXBuildFile; fileRef = 55274D4B1E80FF300095AC1F /* NSObject+RT.m */; };
 		553766141DF01FDC0019BDFA /* SplashData.m in Sources */ = {isa = PBXBuildFile; fileRef = 553766131DF01FDC0019BDFA /* SplashData.m */; };
 		553766171DF0219F0019BDFA /* PlayWithNSCodingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553766161DF0219F0019BDFA /* PlayWithNSCodingController.m */; };
 		553895EA1E247177001CAE98 /* ExceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553895E91E247177001CAE98 /* ExceptionViewController.m */; };
@@ -26,6 +29,10 @@
 		5543634D1DC3396300A078D0 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5543634B1DC3396300A078D0 /* FirstViewController.xib */; };
 		554363511DC3397600A078D0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5543634F1DC3397600A078D0 /* SecondViewController.m */; };
 		554363521DC3397600A078D0 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554363501DC3397600A078D0 /* SecondViewController.xib */; };
+		5553249C1E825234008049B7 /* StubHandleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5553249B1E825234008049B7 /* StubHandleManager.m */; };
+		555C62671E792C0F00A9FA7A /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 555C62661E792C0F00A9FA7A /* CustomView.m */; };
+		555C626E1E7A3C6D00A9FA7A /* CoreGraphicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555C626D1E7A3C6D00A9FA7A /* CoreGraphicViewController.m */; };
+		555C62711E7A3C9E00A9FA7A /* MyDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 555C62701E7A3C9E00A9FA7A /* MyDrawView.m */; };
 		55620EF21E5D2E5700F2D58A /* AppStoreDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55620EF01E5D2E5700F2D58A /* AppStoreDemoViewController.m */; };
 		55620EF31E5D2E5700F2D58A /* AppStoreDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55620EF11E5D2E5700F2D58A /* AppStoreDemoViewController.xib */; };
 		55620EF71E5D2F9600F2D58A /* MyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55620EF61E5D2F9600F2D58A /* MyHeaderView.m */; };
@@ -69,6 +76,12 @@
 		327969AA1CF194BEB551AC61 /* libPods-PlayGround.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlayGround.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		353B8F7B2C48FE721849E2F9 /* Pods-PlayGroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayGroundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayGroundTests/Pods-PlayGroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		4F10592CF73947CC063BAC1C /* Pods-PlayGroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayGroundTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayGroundTests/Pods-PlayGroundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55274D421E80D47E0095AC1F /* RunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
+		55274D431E80D47E0095AC1F /* RunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
+		55274D461E80E1120095AC1F /* MethodsHooker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodsHooker.h; sourceTree = "<group>"; };
+		55274D471E80E1120095AC1F /* MethodsHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodsHooker.m; sourceTree = "<group>"; };
+		55274D4A1E80FF300095AC1F /* NSObject+RT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RT.h"; sourceTree = "<group>"; };
+		55274D4B1E80FF300095AC1F /* NSObject+RT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RT.m"; sourceTree = "<group>"; };
 		553766121DF01FDC0019BDFA /* SplashData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashData.h; sourceTree = "<group>"; };
 		553766131DF01FDC0019BDFA /* SplashData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashData.m; sourceTree = "<group>"; };
 		553766151DF0219F0019BDFA /* PlayWithNSCodingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayWithNSCodingController.h; sourceTree = "<group>"; };
@@ -105,6 +118,14 @@
 		5543634E1DC3397600A078D0 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		5543634F1DC3397600A078D0 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		554363501DC3397600A078D0 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		5553249A1E825234008049B7 /* StubHandleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StubHandleManager.h; sourceTree = "<group>"; };
+		5553249B1E825234008049B7 /* StubHandleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StubHandleManager.m; sourceTree = "<group>"; };
+		555C62651E792C0F00A9FA7A /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		555C62661E792C0F00A9FA7A /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		555C626C1E7A3C6D00A9FA7A /* CoreGraphicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreGraphicViewController.h; sourceTree = "<group>"; };
+		555C626D1E7A3C6D00A9FA7A /* CoreGraphicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicViewController.m; sourceTree = "<group>"; };
+		555C626F1E7A3C9E00A9FA7A /* MyDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDrawView.h; sourceTree = "<group>"; };
+		555C62701E7A3C9E00A9FA7A /* MyDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDrawView.m; sourceTree = "<group>"; };
 		55620EEF1E5D2E5700F2D58A /* AppStoreDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStoreDemoViewController.h; sourceTree = "<group>"; };
 		55620EF01E5D2E5700F2D58A /* AppStoreDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStoreDemoViewController.m; sourceTree = "<group>"; };
 		55620EF11E5D2E5700F2D58A /* AppStoreDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppStoreDemoViewController.xib; sourceTree = "<group>"; };
@@ -179,6 +200,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		55274D451E80D48E0095AC1F /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				55274D421E80D47E0095AC1F /* RunTimeViewController.h */,
+				55274D431E80D47E0095AC1F /* RunTimeViewController.m */,
+				55274D461E80E1120095AC1F /* MethodsHooker.h */,
+				55274D471E80E1120095AC1F /* MethodsHooker.m */,
+				5553249A1E825234008049B7 /* StubHandleManager.h */,
+				5553249B1E825234008049B7 /* StubHandleManager.m */,
+			);
+			name = RunTime;
+			sourceTree = "<group>";
+		};
+		55274D491E80FEF20095AC1F /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				553766111DF01F9F0019BDFA /* NSCoding */,
+				5580379D1DD9533B00B3BAC0 /* Runloop&Timer */,
+				55B2D9591DC6FFD000B46A1D /* ExploreAutomaticallyAdjustsScrollView */,
+				55B2D9541DC35CD300B46A1D /* DRHeader(failed) */,
+				553A15371DFA9BC40033AD84 /* DrawBorad */,
+				55EEEE361E0A2A1B0069EBCA /* PlayInvocation */,
+				55ABDD621E0D150600E1B576 /* PlayWindow */,
+				55ABDD6B1E10B3EC00E1B576 /* PlayAnimation */,
+				557CDC6D1E4DCB370043FD63 /* PlayInitViewFromNIb */,
+				55620EF41E5D2E5F00F2D58A /* AppstorePlayer */,
+				555C626B1E7A3C2900A9FA7A /* Exception */,
+				555C62721E7A3CA600A9FA7A /* Core Graphic */,
+				55274D451E80D48E0095AC1F /* RunTime */,
+			);
+			name = Demos;
+			sourceTree = "<group>";
+		};
 		553766111DF01F9F0019BDFA /* NSCoding */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,20 +286,11 @@
 				554363161DC328B600A078D0 /* AppDelegate.m */,
 				55B2D9551DC35D1200B46A1D /* CategoryController.h */,
 				55B2D9561DC35D1200B46A1D /* CategoryController.m */,
-				553766111DF01F9F0019BDFA /* NSCoding */,
-				5580379D1DD9533B00B3BAC0 /* Runloop&Timer */,
-				55B2D9591DC6FFD000B46A1D /* ExploreAutomaticallyAdjustsScrollView */,
-				55B2D9541DC35CD300B46A1D /* DRHeader(failed) */,
-				553A15371DFA9BC40033AD84 /* DrawBorad */,
-				55EEEE361E0A2A1B0069EBCA /* PlayInvocation */,
-				55ABDD621E0D150600E1B576 /* PlayWindow */,
-				55ABDD6B1E10B3EC00E1B576 /* PlayAnimation */,
-				557CDC6D1E4DCB370043FD63 /* PlayInitViewFromNIb */,
-				55620EF41E5D2E5F00F2D58A /* AppstorePlayer */,
-				553895E81E247177001CAE98 /* ExceptionViewController.h */,
-				553895E91E247177001CAE98 /* ExceptionViewController.m */,
-				5543631B1DC328B600A078D0 /* Main.storyboard */,
+				55274D4A1E80FF300095AC1F /* NSObject+RT.h */,
+				55274D4B1E80FF300095AC1F /* NSObject+RT.m */,
+				55274D491E80FEF20095AC1F /* Demos */,
 				5543631E1DC328B600A078D0 /* Assets.xcassets */,
+				5543631B1DC328B600A078D0 /* Main.storyboard */,
 				554363121DC328B600A078D0 /* Supporting Files */,
 			);
 			path = PlayGround;
@@ -277,6 +322,26 @@
 				554363391DC328B600A078D0 /* Info.plist */,
 			);
 			path = PlayGroundUITests;
+			sourceTree = "<group>";
+		};
+		555C626B1E7A3C2900A9FA7A /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				553895E81E247177001CAE98 /* ExceptionViewController.h */,
+				553895E91E247177001CAE98 /* ExceptionViewController.m */,
+			);
+			name = Exception;
+			sourceTree = "<group>";
+		};
+		555C62721E7A3CA600A9FA7A /* Core Graphic */ = {
+			isa = PBXGroup;
+			children = (
+				555C626C1E7A3C6D00A9FA7A /* CoreGraphicViewController.h */,
+				555C626D1E7A3C6D00A9FA7A /* CoreGraphicViewController.m */,
+				555C626F1E7A3C9E00A9FA7A /* MyDrawView.h */,
+				555C62701E7A3C9E00A9FA7A /* MyDrawView.m */,
+			);
+			name = "Core Graphic";
 			sourceTree = "<group>";
 		};
 		55620EF41E5D2E5F00F2D58A /* AppstorePlayer */ = {
@@ -330,6 +395,8 @@
 				55ABDD661E10B3E300E1B576 /* AnimationVC.h */,
 				55ABDD671E10B3E300E1B576 /* AnimationVC.m */,
 				55ABDD681E10B3E300E1B576 /* AnimationVC.xib */,
+				555C62651E792C0F00A9FA7A /* CustomView.h */,
+				555C62661E792C0F00A9FA7A /* CustomView.m */,
 			);
 			name = PlayAnimation;
 			sourceTree = "<group>";
@@ -543,7 +610,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3152F70346BB4A9934DB4477 /* [CP] Copy Pods Resources */ = {
@@ -603,7 +670,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		83FD0F1D33FB93DEECC59778 /* [CP] Embed Pods Frameworks */ = {
@@ -663,7 +730,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -678,21 +745,28 @@
 				55620EF71E5D2F9600F2D58A /* MyHeaderView.m in Sources */,
 				55ABDD601E0D14FE00E1B576 /* PlayWithWindowViewController.m in Sources */,
 				553766171DF0219F0019BDFA /* PlayWithNSCodingController.m in Sources */,
+				555C62671E792C0F00A9FA7A /* CustomView.m in Sources */,
 				553A15351DFA9BB70033AD84 /* DrawBoradViewController.m in Sources */,
 				557CDC671E4DCAAC0043FD63 /* BlankView.m in Sources */,
 				554363471DC3297500A078D0 /* DRScrollableHeaderView.m in Sources */,
 				55ABDD651E0D1ECE00E1B576 /* ExcellentWindow.m in Sources */,
+				55274D481E80E1120095AC1F /* MethodsHooker.m in Sources */,
+				55274D4C1E80FF300095AC1F /* NSObject+RT.m in Sources */,
 				5543631A1DC328B600A078D0 /* TestSrollableHeaderController.m in Sources */,
+				55274D441E80D47E0095AC1F /* RunTimeViewController.m in Sources */,
 				55620EF21E5D2E5700F2D58A /* AppStoreDemoViewController.m in Sources */,
+				555C626E1E7A3C6D00A9FA7A /* CoreGraphicViewController.m in Sources */,
 				557CDC6C1E4DCB2A0043FD63 /* PlayWithNewAViewFromNibVC.m in Sources */,
 				5543634C1DC3396300A078D0 /* FirstViewController.m in Sources */,
 				55EEEE351E0A2A150069EBCA /* PlayInvocationVC.m in Sources */,
 				554363171DC328B600A078D0 /* AppDelegate.m in Sources */,
 				55ABDD691E10B3E300E1B576 /* AnimationVC.m in Sources */,
+				5553249C1E825234008049B7 /* StubHandleManager.m in Sources */,
 				55B2D9571DC35D1200B46A1D /* CategoryController.m in Sources */,
 				5580379C1DD9532F00B3BAC0 /* RunLoopAndTimerController.m in Sources */,
 				553A153A1DFA9C6B0033AD84 /* DRDrawBoard.m in Sources */,
 				554363141DC328B600A078D0 /* main.m in Sources */,
+				555C62711E7A3C9E00A9FA7A /* MyDrawView.m in Sources */,
 				553766141DF01FDC0019BDFA /* SplashData.m in Sources */,
 				55B2D95C1DC7097300B46A1D /* TableViewController.m in Sources */,
 				553895EA1E247177001CAE98 /* ExceptionViewController.m in Sources */,

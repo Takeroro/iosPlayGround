@@ -8,6 +8,7 @@ target 'PlayGround' do
   # Pods for PlayGround
   pod "BeeHive", '1.0.0'
   pod 'pop', '~> 1.0'
+  pod 'Masonry', '= 0.6.4'
   target 'PlayGroundTests' do
     inherit! :search_paths
     # Pods for testing
