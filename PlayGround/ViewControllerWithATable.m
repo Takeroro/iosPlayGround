@@ -28,7 +28,8 @@
     
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
-    [self initTabelHeader];
+//    [self initTabelHeader];
+    [self diretlyAddSubView];
     //测试发现，只要关闭有这句，也就是默认情况下，系统自动适配tablview ，statusbar ,tool bar ,navigationbar覆盖问题
 //    self.automaticallyAdjustsScrollViewInsets = NO;
 }
@@ -63,10 +64,10 @@
 #pragma mark - scroll view delegate 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if (scrollView.contentOffset.y < tableHeaderHeight - 64) {
-        [scrollView setContentOffset:CGPointMake(0, tableHeaderHeight - 64) animated:YES];
-    }
-    NSLog(@"%f",scrollView.contentOffset.y);
+//    if (scrollView.contentOffset.y < tableHeaderHeight - 64) {
+//        [scrollView setContentOffset:CGPointMake(0, tableHeaderHeight - 64) animated:YES];
+//    }
+//    NSLog(@"%f",scrollView.contentOffset.y);
 }
 
 #pragma mark - inner methods
@@ -80,6 +81,15 @@
     [_tableView setContentOffset:CGPointMake(0, tableHeaderHeight - 64) animated:YES];
 }
 
+#pragma mark - 效果这个最好，微信logo就是这样加上去的
+
+- (void)diretlyAddSubView
+{
+    UIView *aView = [[UIView alloc] initWithFrame:CGRectMake(0, -tableHeaderHeight, DRScreenWidth, tableHeaderHeight)];
+    aView.backgroundColor = [UIColor yellowColor];
+    
+    [_tableView addSubview:aView];
+}
 
 
 @end
