@@ -6,8 +6,7 @@ target 'PlayGround' do
   # use_frameworks!
 
   # Pods for PlayGround
-  pod "BeeHive", '1.0.0'
-  pod 'pop', '~> 1.0'
+
   target 'PlayGroundTests' do
     inherit! :search_paths
     # Pods for testing
