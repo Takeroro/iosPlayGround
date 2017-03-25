@@ -41,13 +41,17 @@
 - (void)fuckUWithDick:(NSString *)dick AndToes:(NSString *)toes
 {
     NSLog(@"fuckWithDick:%@,%@",dick,toes);
+    
 }
 
 #pragma mark - figure out [self class]
 + (void)doSthInClassMethod
 {
-    //类方法无法调用实例方法
-    [[self class] doSthInInstantMethod];
+//类方法无法调用实例方法
+//    will crash
+//    'NSInvalidArgumentException', reason: '+[PlayInvocationVC doSthInInstantMethod]: unrecognized selector sent to class
+    
+//    [[self class] doSthInInstantMethod];
 }
 
 - (void)doSthInInstantMethod

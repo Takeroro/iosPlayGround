@@ -19,6 +19,8 @@
 #import "ExceptionViewController.h"
 #import "PlayWithNewAViewFromNibVC.h"
 #import "AppStoreDemoViewController.h"
+#import "CoreGraphicViewController.h"
+#import "RunTimeViewController.h"
 
 @interface CategoryController ()
 {
@@ -49,7 +51,8 @@
     [_dataArray addObject:[ExceptionViewController class]];
     [_dataArray addObject:[PlayWithNewAViewFromNibVC class]];
     [_dataArray addObject:[AppStoreDemoViewController class]];
-
+    [_dataArray addObject:[CoreGraphicViewController class]];
+    [_dataArray addObject:[RunTimeViewController class]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,6 +82,9 @@
             break;
         case 2:
             cell.textLabel.text = @"关闭了self.automaticallyAdjustsScrollViewInsets = NO ";
+            break;
+        case 8:
+            cell.textLabel.text = @"显隐动画，layoutSubViews, masonary";
             break;
 
         default:
@@ -154,7 +160,16 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-
+        case 12: {
+            CoreGraphicViewController *vc = [[CoreGraphicViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 13: {
+            RunTimeViewController *vc = [[RunTimeViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
     }
 }
 @end
