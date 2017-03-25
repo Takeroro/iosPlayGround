@@ -6,7 +6,7 @@ target 'PlayGround' do
   # use_frameworks!
 
   # Pods for PlayGround
-
+  pod 'Masonry', '=0.6.4'
   target 'PlayGroundTests' do
     inherit! :search_paths
     # Pods for testing
