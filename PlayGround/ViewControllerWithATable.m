@@ -29,6 +29,7 @@
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
     [self initTabelHeader];
+//    [self initBackGroundView];
     //测试发现，只要关闭有这句，也就是默认情况下，系统自动适配tablview ，statusbar ,tool bar ,navigationbar覆盖问题
 //    self.automaticallyAdjustsScrollViewInsets = NO;
 }
@@ -61,12 +62,18 @@
 }
 
 #pragma mark - scroll view delegate 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+//{
+//    if (scrollView.contentOffset.y < tableHeaderHeight - 64) {
+//        [scrollView setContentOffset:CGPointMake(0, tableHeaderHeight - 64) animated:YES];
+//    }
+//    NSLog(@"%f",scrollView.contentOffset.y);
+//}
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
 {
     if (scrollView.contentOffset.y < tableHeaderHeight - 64) {
-        [scrollView setContentOffset:CGPointMake(0, tableHeaderHeight - 64) animated:YES];
+        *targetContentOffset = CGPointMake(0, tableHeaderHeight - 64);
     }
-    NSLog(@"%f",scrollView.contentOffset.y);
 }
 
 #pragma mark - inner methods
@@ -78,6 +85,18 @@
     _tableView.tableHeaderView = aView;
     
     [_tableView setContentOffset:CGPointMake(0, tableHeaderHeight - 64) animated:YES];
+}
+
+- (void)initBackGroundView
+{
+    UIView *aView = [[UIView alloc] initWithFrame:CGRectMake(0, -DRScreenHeight, DRScreenWidth, tableHeaderHeight)];
+    aView.backgroundColor = [UIColor yellowColor];
+    
+    UIView *subView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    subView.backgroundColor = [UIColor whiteColor];
+    [aView addSubview:subView];
+    
+    _tableView.backgroundView = aView;
 }
 
 
