@@ -9,10 +9,12 @@
 #import "CoreGraphicViewController.h"
 #import <Masonry.h>
 #import "MyDrawView.h"
+#import "DRScrollLabel.h"
 
 @interface CoreGraphicViewController ()
 {
     MyDrawView *_myDrawView;
+    DRScrollLabel *_testScrollLabel;
 }
 
 @end
@@ -34,6 +36,7 @@
 {
     [super viewDidAppear:animated];
     [_myDrawView runAnimation];
+    [_testScrollLabel startAnimation];
 }
 
 - (void)initUI
@@ -45,6 +48,16 @@
     [_myDrawView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
         make.size.mas_equalTo(CGSizeMake(300, 300));
+    }];
+    
+    _testScrollLabel = [[DRScrollLabel alloc]init];
+    _testScrollLabel.text = @"1234567";
+    _testScrollLabel.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:_testScrollLabel];
+    [_testScrollLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(DRScreenWidth, 50));
+        make.top.equalTo(_myDrawView.mas_bottom).offset(50);
+        make.leading.equalTo(self.view).offset(0);
     }];
 }
 

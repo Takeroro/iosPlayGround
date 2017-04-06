@@ -10,6 +10,8 @@
 		55274D441E80D47E0095AC1F /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55274D431E80D47E0095AC1F /* RunTimeViewController.m */; };
 		55274D481E80E1120095AC1F /* MethodsHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = 55274D471E80E1120095AC1F /* MethodsHooker.m */; };
 		55274D4C1E80FF300095AC1F /* NSObject+RT.m in Sources */ = {isa = PBXBuildFile; fileRef = 55274D4B1E80FF300095AC1F /* NSObject+RT.m */; };
+		552E2EDA1E96136C0079D730 /* UILabel+autoScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E2ED91E96136C0079D730 /* UILabel+autoScroll.m */; };
+		552E2EDD1E962D5B0079D730 /* DRScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E2EDC1E962D5B0079D730 /* DRScrollLabel.m */; };
 		553766141DF01FDC0019BDFA /* SplashData.m in Sources */ = {isa = PBXBuildFile; fileRef = 553766131DF01FDC0019BDFA /* SplashData.m */; };
 		553766171DF0219F0019BDFA /* PlayWithNSCodingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553766161DF0219F0019BDFA /* PlayWithNSCodingController.m */; };
 		553895EA1E247177001CAE98 /* ExceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553895E91E247177001CAE98 /* ExceptionViewController.m */; };
@@ -82,6 +84,10 @@
 		55274D471E80E1120095AC1F /* MethodsHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodsHooker.m; sourceTree = "<group>"; };
 		55274D4A1E80FF300095AC1F /* NSObject+RT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RT.h"; sourceTree = "<group>"; };
 		55274D4B1E80FF300095AC1F /* NSObject+RT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RT.m"; sourceTree = "<group>"; };
+		552E2ED81E96136C0079D730 /* UILabel+autoScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+autoScroll.h"; path = "Category/UILabel+autoScroll.h"; sourceTree = "<group>"; };
+		552E2ED91E96136C0079D730 /* UILabel+autoScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+autoScroll.m"; path = "Category/UILabel+autoScroll.m"; sourceTree = "<group>"; };
+		552E2EDB1E962D5B0079D730 /* DRScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRScrollLabel.h; sourceTree = "<group>"; };
+		552E2EDC1E962D5B0079D730 /* DRScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRScrollLabel.m; sourceTree = "<group>"; };
 		553766121DF01FDC0019BDFA /* SplashData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashData.h; sourceTree = "<group>"; };
 		553766131DF01FDC0019BDFA /* SplashData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashData.m; sourceTree = "<group>"; };
 		553766151DF0219F0019BDFA /* PlayWithNSCodingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayWithNSCodingController.h; sourceTree = "<group>"; };
@@ -233,6 +239,17 @@
 			name = Demos;
 			sourceTree = "<group>";
 		};
+		552E2ED71E9613260079D730 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				55274D4A1E80FF300095AC1F /* NSObject+RT.h */,
+				55274D4B1E80FF300095AC1F /* NSObject+RT.m */,
+				552E2ED81E96136C0079D730 /* UILabel+autoScroll.h */,
+				552E2ED91E96136C0079D730 /* UILabel+autoScroll.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		553766111DF01F9F0019BDFA /* NSCoding */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,8 +303,7 @@
 				554363161DC328B600A078D0 /* AppDelegate.m */,
 				55B2D9551DC35D1200B46A1D /* CategoryController.h */,
 				55B2D9561DC35D1200B46A1D /* CategoryController.m */,
-				55274D4A1E80FF300095AC1F /* NSObject+RT.h */,
-				55274D4B1E80FF300095AC1F /* NSObject+RT.m */,
+				552E2ED71E9613260079D730 /* Category */,
 				55274D491E80FEF20095AC1F /* Demos */,
 				5543631E1DC328B600A078D0 /* Assets.xcassets */,
 				5543631B1DC328B600A078D0 /* Main.storyboard */,
@@ -340,6 +356,8 @@
 				555C626D1E7A3C6D00A9FA7A /* CoreGraphicViewController.m */,
 				555C626F1E7A3C9E00A9FA7A /* MyDrawView.h */,
 				555C62701E7A3C9E00A9FA7A /* MyDrawView.m */,
+				552E2EDB1E962D5B0079D730 /* DRScrollLabel.h */,
+				552E2EDC1E962D5B0079D730 /* DRScrollLabel.m */,
 			);
 			name = "Core Graphic";
 			sourceTree = "<group>";
@@ -610,7 +628,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3152F70346BB4A9934DB4477 /* [CP] Copy Pods Resources */ = {
@@ -670,7 +688,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		83FD0F1D33FB93DEECC59778 /* [CP] Embed Pods Frameworks */ = {
@@ -730,7 +748,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -755,10 +773,12 @@
 				5543631A1DC328B600A078D0 /* TestSrollableHeaderController.m in Sources */,
 				55274D441E80D47E0095AC1F /* RunTimeViewController.m in Sources */,
 				55620EF21E5D2E5700F2D58A /* AppStoreDemoViewController.m in Sources */,
+				552E2EDD1E962D5B0079D730 /* DRScrollLabel.m in Sources */,
 				555C626E1E7A3C6D00A9FA7A /* CoreGraphicViewController.m in Sources */,
 				557CDC6C1E4DCB2A0043FD63 /* PlayWithNewAViewFromNibVC.m in Sources */,
 				5543634C1DC3396300A078D0 /* FirstViewController.m in Sources */,
 				55EEEE351E0A2A150069EBCA /* PlayInvocationVC.m in Sources */,
+				552E2EDA1E96136C0079D730 /* UILabel+autoScroll.m in Sources */,
 				554363171DC328B600A078D0 /* AppDelegate.m in Sources */,
 				55ABDD691E10B3E300E1B576 /* AnimationVC.m in Sources */,
 				5553249C1E825234008049B7 /* StubHandleManager.m in Sources */,
