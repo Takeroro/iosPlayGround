@@ -9,6 +9,9 @@
 #import "TableViewController.h"
 
 @interface TableViewController ()
+{
+    int _count;
+}
 
 @end
 
@@ -19,7 +22,17 @@
 
     self.automaticallyAdjustsScrollViewInsets =NO;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+//    UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(insert)];
+    
+    UIBarButtonItem * button = [[UIBarButtonItem alloc]initWithTitle:@"环境配置" style:UIBarButtonItemStylePlain target:self action:@selector(insert)];
+    self.navigationItem.rightBarButtonItem = button;
 
+    _count = 3;
+    
+//    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(theAddMethod:)];
+//    [viewController.navigationItem setLeftBarButtonItem:rightBarButton animated:NO];
+//    [rightBarButton release];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,12 +44,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 1;
+    return _count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 10;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -48,6 +61,12 @@
     return cell;
 }
 
+#pragma mark - 
+- (void)insert
+{
+    _count++;
+    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
 
 /*
 // Override to support conditional editing of the table view.

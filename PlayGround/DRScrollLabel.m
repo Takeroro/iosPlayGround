@@ -49,14 +49,19 @@
     for (UIView *view  in self.subviews) {
         [view removeFromSuperview];
     }
-    _scrollLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.bounds.size.width / 2 - _textSize.width / 2, self.bounds.size.height / 2 - _textSize.height / 2, _textSize.width, _textSize.height)];
+    int x = self.bounds.size.width / 2 - _textSize.width / 2;
+    int y = self.bounds.size.height / 2 - _textSize.height / 2;
+    //听说用int 比 float 更高效。特别在动态计算cell高度时，可能导致卡顿。
+    _scrollLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, y, _textSize.width, _textSize.height)];
     
-    //    [subLabel sizeToFit]; 呢句搞不出动画了···
+//    [_scrollLabel sizeToFit]; //呢句搞不出动画了··· bound  变成（0，0）因为call这句的时候text为空···
     _scrollLabel.backgroundColor = [UIColor redColor];
     _scrollLabel.text = self.text;
     _scrollLabel.font = self.font;
     _scrollLabel.textColor = [UIColor blackColor];
     [self addSubview:_scrollLabel];
+   
+    [_scrollLabel sizeToFit];//call 这句之前，text已经有内容了，四舍五入了textSize作为bound.size
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.translation.x"];
     animation.delegate = self;
