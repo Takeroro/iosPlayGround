@@ -91,16 +91,16 @@ static int HeaderViewHeight = 200;
 {
     if ([keyPath isEqualToString:@"contentOffset"]) {
         CGPoint offset = [change[NSKeyValueChangeNewKey] CGPointValue];
-//        NSLog(@"KVO:%f",offset.y);
+        NSLog(@"KVO:%f",offset.y);
         
-        if (offset.y > -264 && offset.y < -64) {
+        if (offset.y > -(HeaderViewHeight +navigationBarHeightPlusStatusBarHeight) && offset.y < -navigationBarHeightPlusStatusBarHeight) {
             CGRect frame = _headerView.frame;
-            frame.size.height = - 64 - offset.y;
+            frame.size.height = - navigationBarHeightPlusStatusBarHeight - offset.y;
             _headerView.frame = frame;
-        } else if (offset.y <= -264) {
-            _headerView.frame = CGRectMake(0, 64, DRScreenWidth, HeaderViewHeight);
-        } else if (offset.y >= -64) {
-            _headerView.frame = CGRectMake(0, 64, DRScreenWidth, 0);
+        } else if (offset.y <= -(HeaderViewHeight +navigationBarHeightPlusStatusBarHeight)) {
+            _headerView.frame = CGRectMake(0, navigationBarHeightPlusStatusBarHeight, DRScreenWidth, HeaderViewHeight);
+        } else if (offset.y >= -navigationBarHeightPlusStatusBarHeight) {
+            _headerView.frame = CGRectMake(0, navigationBarHeightPlusStatusBarHeight, DRScreenWidth, 0);
         }
     }
 }

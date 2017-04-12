@@ -12,6 +12,7 @@
 		55274D4C1E80FF300095AC1F /* NSObject+RT.m in Sources */ = {isa = PBXBuildFile; fileRef = 55274D4B1E80FF300095AC1F /* NSObject+RT.m */; };
 		552E2EDA1E96136C0079D730 /* UILabel+autoScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E2ED91E96136C0079D730 /* UILabel+autoScroll.m */; };
 		552E2EDD1E962D5B0079D730 /* DRScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E2EDC1E962D5B0079D730 /* DRScrollLabel.m */; };
+		552E2EE31E9E1C820079D730 /* AnotherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 552E2EE21E9E1C820079D730 /* AnotherView.m */; };
 		553766141DF01FDC0019BDFA /* SplashData.m in Sources */ = {isa = PBXBuildFile; fileRef = 553766131DF01FDC0019BDFA /* SplashData.m */; };
 		553766171DF0219F0019BDFA /* PlayWithNSCodingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553766161DF0219F0019BDFA /* PlayWithNSCodingController.m */; };
 		553895EA1E247177001CAE98 /* ExceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553895E91E247177001CAE98 /* ExceptionViewController.m */; };
@@ -88,6 +89,8 @@
 		552E2ED91E96136C0079D730 /* UILabel+autoScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+autoScroll.m"; path = "Category/UILabel+autoScroll.m"; sourceTree = "<group>"; };
 		552E2EDB1E962D5B0079D730 /* DRScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRScrollLabel.h; sourceTree = "<group>"; };
 		552E2EDC1E962D5B0079D730 /* DRScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRScrollLabel.m; sourceTree = "<group>"; };
+		552E2EE11E9E1C820079D730 /* AnotherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherView.h; sourceTree = "<group>"; };
+		552E2EE21E9E1C820079D730 /* AnotherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherView.m; sourceTree = "<group>"; };
 		553766121DF01FDC0019BDFA /* SplashData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashData.h; sourceTree = "<group>"; };
 		553766131DF01FDC0019BDFA /* SplashData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashData.m; sourceTree = "<group>"; };
 		553766151DF0219F0019BDFA /* PlayWithNSCodingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayWithNSCodingController.h; sourceTree = "<group>"; };
@@ -370,6 +373,8 @@
 				55620EF11E5D2E5700F2D58A /* AppStoreDemoViewController.xib */,
 				55620EF51E5D2F9600F2D58A /* MyHeaderView.h */,
 				55620EF61E5D2F9600F2D58A /* MyHeaderView.m */,
+				552E2EE11E9E1C820079D730 /* AnotherView.h */,
+				552E2EE21E9E1C820079D730 /* AnotherView.m */,
 			);
 			name = AppstorePlayer;
 			sourceTree = "<group>";
@@ -760,6 +765,7 @@
 			files = (
 				55B2D95F1DC716C300B46A1D /* ViewControllerWithATable.m in Sources */,
 				554363511DC3397600A078D0 /* SecondViewController.m in Sources */,
+				552E2EE31E9E1C820079D730 /* AnotherView.m in Sources */,
 				55620EF71E5D2F9600F2D58A /* MyHeaderView.m in Sources */,
 				55ABDD601E0D14FE00E1B576 /* PlayWithWindowViewController.m in Sources */,
 				553766171DF0219F0019BDFA /* PlayWithNSCodingController.m in Sources */,

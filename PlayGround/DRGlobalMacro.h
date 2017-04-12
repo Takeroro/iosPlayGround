@@ -14,3 +14,4 @@
 
 #define DRScreenHeight  [UIScreen mainScreen].bounds.size.height
 #define DRScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define navigationBarHeightPlusStatusBarHeight 64

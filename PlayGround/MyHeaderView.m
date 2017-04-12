@@ -7,8 +7,14 @@
 //
 
 #import "MyHeaderView.h"
+#import "AnotherView.h"
+#import <Masonry.h>
+
+#define visibleOffset 150
+
 @interface MyHeaderView() {
     UIButton *_btn;
+    AnotherView *_aView;
 }
 
 @end
@@ -19,6 +25,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self initBtn];
+        [self initAnotherView];
         [self addObserver];
     }
     return self;
@@ -44,6 +51,28 @@
     NSLog(@"clicked");
 }
 
+- (void)initAnotherView
+{
+//    _aView = [AnotherView new];
+    [self addSubview:[AnotherView sharedObject]];
+    [[AnotherView sharedObject] mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+        make.left.equalTo(_btn.mas_left).offset(10);
+        make.top.equalTo(_btn.mas_bottom).offset(10);
+    }];
+    
+    //test if give self to aView as ownedView, will trigger [self dealloc]?   won`t!! neither [self dealloc] nor [aView dealloc]. retain cycled!
+//    aView.ownedView = self;
+    
+    //how about a singleton?
+    [AnotherView sharedObject].ownedView = self; //also failed
+    
+    //test if give self to aView as unOwnedView, will trigger dealloc? will!!
+//    _aView.unOwnedView = self;
+
+//    _aView.backgroundColor = [UIColor purpleColor];
+}
+
 #pragma mark - touch
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
@@ -61,10 +90,12 @@
     CGRect rect = [change[NSKeyValueChangeNewKey] CGRectValue];
     NSLog(@"head view height = %f",rect.size.height);
     CGFloat height = rect.size.height;
-    if (height < 80) {
+    if (height < visibleOffset) {
         _btn.hidden = YES;
+        _aView.hidden = YES;
     } else {
         _btn.hidden = NO;
+        _aView.hidden = NO;
     }
 }
 
