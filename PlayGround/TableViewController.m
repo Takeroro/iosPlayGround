@@ -7,10 +7,14 @@
 //
 
 #import "TableViewController.h"
+#import "MayExpandTableViewCell.h"
+
+static NSString *cellId = @"MayExpandCell";
 
 @interface TableViewController ()
 {
     int _count;
+    NSMutableSet *_expandedIndexSet;
 }
 
 @end
@@ -20,19 +24,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.automaticallyAdjustsScrollViewInsets =NO;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+//    self.automaticallyAdjustsScrollViewInsets =NO;
     
-//    UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(insert)];
+    [self.tableView registerClass:[MayExpandTableViewCell class] forCellReuseIdentifier:cellId];
     
-    UIBarButtonItem * button = [[UIBarButtonItem alloc]initWithTitle:@"环境配置" style:UIBarButtonItemStylePlain target:self action:@selector(insert)];
+    UIBarButtonItem * button = [[UIBarButtonItem alloc]initWithTitle:@"add a row" style:UIBarButtonItemStylePlain target:self action:@selector(insert)];
     self.navigationItem.rightBarButtonItem = button;
 
     _count = 3;
     
-//    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(theAddMethod:)];
-//    [viewController.navigationItem setLeftBarButtonItem:rightBarButton animated:NO];
-//    [rightBarButton release];
+    _expandedIndexSet = [NSMutableSet new];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,28 +45,57 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return _count;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 1;
+    return _count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    MayExpandTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [MayExpandTableViewCell initFromNib];
+    }
     
-    cell.textLabel.text = @(indexPath.row).stringValue;
+    __weak typeof(self) weakSelf = self;
+    [cell setClickToExpandBlk:^(){
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        
+        if ([strongSelf->_expandedIndexSet containsObject:@(indexPath.row)]) {
+            [strongSelf->_expandedIndexSet removeObject:@(indexPath.row)];
+        } else {
+            [strongSelf->_expandedIndexSet addObject:@(indexPath.row)];
+        }
+
+        [strongSelf.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+
+        NSLog(@"index = %d", indexPath.row);
+    }];
+
+//    cell.textLabel.text = @(indexPath.row).stringValue;
     // Configure the cell...
     
     return cell;
 }
 
-#pragma mark - 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([_expandedIndexSet containsObject:@(indexPath.row)]) {
+        return 100;
+    } else {
+        return 66;
+    }
+}
+
+#pragma mark -
 - (void)insert
 {
     _count++;
-    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableView beginUpdates];
+    [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:_count-1 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+    [self.tableView endUpdates];
 }
 
 /*

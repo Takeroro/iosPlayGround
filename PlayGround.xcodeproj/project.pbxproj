@@ -43,6 +43,7 @@
 		557CDC691E4DCAC50043FD63 /* BlankView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 557CDC681E4DCAC50043FD63 /* BlankView.xib */; };
 		557CDC6C1E4DCB2A0043FD63 /* PlayWithNewAViewFromNibVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 557CDC6B1E4DCB2A0043FD63 /* PlayWithNewAViewFromNibVC.m */; };
 		5580379C1DD9532F00B3BAC0 /* RunLoopAndTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5580379B1DD9532F00B3BAC0 /* RunLoopAndTimerController.m */; };
+		5581235F1EA629010022153E /* ExpandableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581235E1EA629010022153E /* ExpandableView.m */; };
 		55ABDD601E0D14FE00E1B576 /* PlayWithWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55ABDD5E1E0D14FE00E1B576 /* PlayWithWindowViewController.m */; };
 		55ABDD611E0D14FE00E1B576 /* PlayWithWindowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55ABDD5F1E0D14FE00E1B576 /* PlayWithWindowViewController.xib */; };
 		55ABDD651E0D1ECE00E1B576 /* ExcellentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 55ABDD641E0D1ECE00E1B576 /* ExcellentWindow.m */; };
@@ -51,6 +52,8 @@
 		55B2D9571DC35D1200B46A1D /* CategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2D9561DC35D1200B46A1D /* CategoryController.m */; };
 		55B2D95C1DC7097300B46A1D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2D95B1DC7097300B46A1D /* TableViewController.m */; };
 		55B2D95F1DC716C300B46A1D /* ViewControllerWithATable.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2D95E1DC716C300B46A1D /* ViewControllerWithATable.m */; };
+		55B37F3B1EA0A8A30079A674 /* MayExpandTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B37F391EA0A8A30079A674 /* MayExpandTableViewCell.m */; };
+		55B37F3C1EA0A8A30079A674 /* MayExpandTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B37F3A1EA0A8A30079A674 /* MayExpandTableViewCell.xib */; };
 		55EEEE351E0A2A150069EBCA /* PlayInvocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EEEE341E0A2A150069EBCA /* PlayInvocationVC.m */; };
 		6113503885E1442370D442AD /* libPods-PlayGroundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E30966F957FE093EE868CB /* libPods-PlayGroundTests.a */; };
 		A64F48F98EE51E562938B096 /* libPods-PlayGroundUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019EB35077561059620D1718 /* libPods-PlayGroundUITests.a */; };
@@ -147,6 +150,8 @@
 		557CDC6B1E4DCB2A0043FD63 /* PlayWithNewAViewFromNibVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayWithNewAViewFromNibVC.m; sourceTree = "<group>"; };
 		5580379A1DD9532F00B3BAC0 /* RunLoopAndTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopAndTimerController.h; sourceTree = "<group>"; };
 		5580379B1DD9532F00B3BAC0 /* RunLoopAndTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopAndTimerController.m; sourceTree = "<group>"; };
+		5581235D1EA629010022153E /* ExpandableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableView.h; sourceTree = "<group>"; };
+		5581235E1EA629010022153E /* ExpandableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandableView.m; sourceTree = "<group>"; };
 		55ABDD5D1E0D14FE00E1B576 /* PlayWithWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayWithWindowViewController.h; sourceTree = "<group>"; };
 		55ABDD5E1E0D14FE00E1B576 /* PlayWithWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayWithWindowViewController.m; sourceTree = "<group>"; };
 		55ABDD5F1E0D14FE00E1B576 /* PlayWithWindowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayWithWindowViewController.xib; sourceTree = "<group>"; };
@@ -162,6 +167,9 @@
 		55B2D95D1DC716C300B46A1D /* ViewControllerWithATable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerWithATable.h; sourceTree = "<group>"; };
 		55B2D95E1DC716C300B46A1D /* ViewControllerWithATable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerWithATable.m; sourceTree = "<group>"; };
 		55B2D9601DC71F2200B46A1D /* PlayGround-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlayGround-Prefix.pch"; sourceTree = "<group>"; };
+		55B37F381EA0A8A30079A674 /* MayExpandTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MayExpandTableViewCell.h; sourceTree = "<group>"; };
+		55B37F391EA0A8A30079A674 /* MayExpandTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MayExpandTableViewCell.m; sourceTree = "<group>"; };
+		55B37F3A1EA0A8A30079A674 /* MayExpandTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MayExpandTableViewCell.xib; sourceTree = "<group>"; };
 		55EEEE331E0A2A150069EBCA /* PlayInvocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayInvocationVC.h; sourceTree = "<group>"; };
 		55EEEE341E0A2A150069EBCA /* PlayInvocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayInvocationVC.m; sourceTree = "<group>"; };
 		65E30966F957FE093EE868CB /* libPods-PlayGroundTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlayGroundTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,6 +314,8 @@
 				554363161DC328B600A078D0 /* AppDelegate.m */,
 				55B2D9551DC35D1200B46A1D /* CategoryController.h */,
 				55B2D9561DC35D1200B46A1D /* CategoryController.m */,
+				5581235D1EA629010022153E /* ExpandableView.h */,
+				5581235E1EA629010022153E /* ExpandableView.m */,
 				552E2ED71E9613260079D730 /* Category */,
 				55274D491E80FEF20095AC1F /* Demos */,
 				5543631E1DC328B600A078D0 /* Assets.xcassets */,
@@ -449,8 +459,19 @@
 				55B2D95B1DC7097300B46A1D /* TableViewController.m */,
 				55B2D95D1DC716C300B46A1D /* ViewControllerWithATable.h */,
 				55B2D95E1DC716C300B46A1D /* ViewControllerWithATable.m */,
+				55B37F3D1EA0A8AC0079A674 /* Cell */,
 			);
 			name = ExploreAutomaticallyAdjustsScrollView;
+			sourceTree = "<group>";
+		};
+		55B37F3D1EA0A8AC0079A674 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				55B37F381EA0A8A30079A674 /* MayExpandTableViewCell.h */,
+				55B37F391EA0A8A30079A674 /* MayExpandTableViewCell.m */,
+				55B37F3A1EA0A8A30079A674 /* MayExpandTableViewCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		55EEEE361E0A2A1B0069EBCA /* PlayInvocation */ = {
@@ -592,6 +613,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55ABDD611E0D14FE00E1B576 /* PlayWithWindowViewController.xib in Resources */,
+				55B37F3C1EA0A8A30079A674 /* MayExpandTableViewCell.xib in Resources */,
 				55ABDD6A1E10B3E300E1B576 /* AnimationVC.xib in Resources */,
 				554363221DC328B600A078D0 /* LaunchScreen.storyboard in Resources */,
 				5543631F1DC328B600A078D0 /* Assets.xcassets in Resources */,
@@ -779,9 +801,11 @@
 				5543631A1DC328B600A078D0 /* TestSrollableHeaderController.m in Sources */,
 				55274D441E80D47E0095AC1F /* RunTimeViewController.m in Sources */,
 				55620EF21E5D2E5700F2D58A /* AppStoreDemoViewController.m in Sources */,
+				5581235F1EA629010022153E /* ExpandableView.m in Sources */,
 				552E2EDD1E962D5B0079D730 /* DRScrollLabel.m in Sources */,
 				555C626E1E7A3C6D00A9FA7A /* CoreGraphicViewController.m in Sources */,
 				557CDC6C1E4DCB2A0043FD63 /* PlayWithNewAViewFromNibVC.m in Sources */,
+				55B37F3B1EA0A8A30079A674 /* MayExpandTableViewCell.m in Sources */,
 				5543634C1DC3396300A078D0 /* FirstViewController.m in Sources */,
 				55EEEE351E0A2A150069EBCA /* PlayInvocationVC.m in Sources */,
 				552E2EDA1E96136C0079D730 /* UILabel+autoScroll.m in Sources */,
