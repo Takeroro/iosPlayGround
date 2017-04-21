@@ -21,6 +21,7 @@
 #import "AppStoreDemoViewController.h"
 #import "CoreGraphicViewController.h"
 #import "RunTimeViewController.h"
+#import "TestRotateViewController.h"
 
 @interface CategoryController ()
 {
@@ -53,6 +54,7 @@
     [_dataArray addObject:[AppStoreDemoViewController class]];
     [_dataArray addObject:[CoreGraphicViewController class]];
     [_dataArray addObject:[RunTimeViewController class]];
+    [_dataArray addObject:[TestRotateViewController class]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -170,6 +172,12 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 14: {
+            TestRotateViewController *vc = [[TestRotateViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+
     }
 }
 @end

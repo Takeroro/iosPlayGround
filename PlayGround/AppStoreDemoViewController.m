@@ -50,6 +50,7 @@ static int HeaderViewHeight = 200;
 {
     _headerView = [[MyHeaderView alloc] initWithFrame:CGRectMake(0, 64, DRScreenWidth, HeaderViewHeight)];
     _headerView.backgroundColor = [UIColor yellowColor];
+    [_headerView addObserver:self forKeyPath:@"testString" options:NSKeyValueObservingOptionNew context:nil];
     [self.view addSubview:_headerView];
 }
 
@@ -102,12 +103,15 @@ static int HeaderViewHeight = 200;
         } else if (offset.y >= -navigationBarHeightPlusStatusBarHeight) {
             _headerView.frame = CGRectMake(0, navigationBarHeightPlusStatusBarHeight, DRScreenWidth, 0);
         }
+    }else if ([keyPath isEqualToString:@"testString"]) {
+        NSLog(@"kvo testString");
     }
 }
 
 -(void)dealloc
 {
     [_tableView removeObserver:self forKeyPath:@"contentOffset"];
+    [_headerView removeObserver:self forKeyPath:@"testString"];
 }
 
 @end

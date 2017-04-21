@@ -39,6 +39,8 @@
 		55620EF21E5D2E5700F2D58A /* AppStoreDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55620EF01E5D2E5700F2D58A /* AppStoreDemoViewController.m */; };
 		55620EF31E5D2E5700F2D58A /* AppStoreDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55620EF11E5D2E5700F2D58A /* AppStoreDemoViewController.xib */; };
 		55620EF71E5D2F9600F2D58A /* MyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55620EF61E5D2F9600F2D58A /* MyHeaderView.m */; };
+		557469C01EAA0F0800774878 /* TestRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557469BE1EAA0F0800774878 /* TestRotateViewController.m */; };
+		557469C11EAA0F0800774878 /* TestRotateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 557469BF1EAA0F0800774878 /* TestRotateViewController.xib */; };
 		557CDC671E4DCAAC0043FD63 /* BlankView.m in Sources */ = {isa = PBXBuildFile; fileRef = 557CDC661E4DCAAC0043FD63 /* BlankView.m */; };
 		557CDC691E4DCAC50043FD63 /* BlankView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 557CDC681E4DCAC50043FD63 /* BlankView.xib */; };
 		557CDC6C1E4DCB2A0043FD63 /* PlayWithNewAViewFromNibVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 557CDC6B1E4DCB2A0043FD63 /* PlayWithNewAViewFromNibVC.m */; };
@@ -143,6 +145,9 @@
 		55620EF11E5D2E5700F2D58A /* AppStoreDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppStoreDemoViewController.xib; sourceTree = "<group>"; };
 		55620EF51E5D2F9600F2D58A /* MyHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHeaderView.h; sourceTree = "<group>"; };
 		55620EF61E5D2F9600F2D58A /* MyHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHeaderView.m; sourceTree = "<group>"; };
+		557469BD1EAA0F0800774878 /* TestRotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRotateViewController.h; sourceTree = "<group>"; };
+		557469BE1EAA0F0800774878 /* TestRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRotateViewController.m; sourceTree = "<group>"; };
+		557469BF1EAA0F0800774878 /* TestRotateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestRotateViewController.xib; sourceTree = "<group>"; };
 		557CDC651E4DCAAC0043FD63 /* BlankView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlankView.h; sourceTree = "<group>"; };
 		557CDC661E4DCAAC0043FD63 /* BlankView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlankView.m; sourceTree = "<group>"; };
 		557CDC681E4DCAC50043FD63 /* BlankView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlankView.xib; sourceTree = "<group>"; };
@@ -245,6 +250,7 @@
 				55620EF41E5D2E5F00F2D58A /* AppstorePlayer */,
 				555C626B1E7A3C2900A9FA7A /* Exception */,
 				555C62721E7A3CA600A9FA7A /* Core Graphic */,
+				557469BC1EAA0EBA00774878 /* Rotate */,
 				55274D451E80D48E0095AC1F /* RunTime */,
 			);
 			name = Demos;
@@ -387,6 +393,16 @@
 				552E2EE21E9E1C820079D730 /* AnotherView.m */,
 			);
 			name = AppstorePlayer;
+			sourceTree = "<group>";
+		};
+		557469BC1EAA0EBA00774878 /* Rotate */ = {
+			isa = PBXGroup;
+			children = (
+				557469BD1EAA0F0800774878 /* TestRotateViewController.h */,
+				557469BE1EAA0F0800774878 /* TestRotateViewController.m */,
+				557469BF1EAA0F0800774878 /* TestRotateViewController.xib */,
+			);
+			name = Rotate;
 			sourceTree = "<group>";
 		};
 		557CDC6D1E4DCB370043FD63 /* PlayInitViewFromNIb */ = {
@@ -615,6 +631,7 @@
 				55ABDD611E0D14FE00E1B576 /* PlayWithWindowViewController.xib in Resources */,
 				55B37F3C1EA0A8A30079A674 /* MayExpandTableViewCell.xib in Resources */,
 				55ABDD6A1E10B3E300E1B576 /* AnimationVC.xib in Resources */,
+				557469C11EAA0F0800774878 /* TestRotateViewController.xib in Resources */,
 				554363221DC328B600A078D0 /* LaunchScreen.storyboard in Resources */,
 				5543631F1DC328B600A078D0 /* Assets.xcassets in Resources */,
 				557CDC691E4DCAC50043FD63 /* BlankView.xib in Resources */,
@@ -812,6 +829,7 @@
 				554363171DC328B600A078D0 /* AppDelegate.m in Sources */,
 				55ABDD691E10B3E300E1B576 /* AnimationVC.m in Sources */,
 				5553249C1E825234008049B7 /* StubHandleManager.m in Sources */,
+				557469C01EAA0F0800774878 /* TestRotateViewController.m in Sources */,
 				55B2D9571DC35D1200B46A1D /* CategoryController.m in Sources */,
 				5580379C1DD9532F00B3BAC0 /* RunLoopAndTimerController.m in Sources */,
 				553A153A1DFA9C6B0033AD84 /* DRDrawBoard.m in Sources */,

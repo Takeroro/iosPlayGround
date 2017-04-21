@@ -15,7 +15,9 @@
 @interface MyHeaderView() {
     UIButton *_btn;
     AnotherView *_aView;
+    
 }
+@property (nonatomic, strong) NSString *testString;
 
 @end
 @implementation MyHeaderView
@@ -27,6 +29,7 @@
         [self initBtn];
         [self initAnotherView];
         [self addObserver];
+        _testString = [[NSString alloc] init];
     }
     return self;
 }
@@ -49,6 +52,7 @@
 - (void)clickTest
 {
     NSLog(@"clicked");
+    self.testString = @"123";
 }
 
 - (void)initAnotherView

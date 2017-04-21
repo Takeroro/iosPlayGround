@@ -8,8 +8,8 @@
 
 #import "ExpandableView.h"
 #import <Masonry.h>
-#import "UIView+Geometry.h"
-#import "NSString+Addition.h"
+//#import "UIView+Geometry.h"
+//#import "NSString+Addition.h"
 @interface ExpandableView()
 {
     UILabel *_label;
@@ -34,9 +34,9 @@
 - (void)initLabel
 {
     _label = [UILabel new];
-    _willExpandLabelContent = [self.attributedString.string getStringWithLineNum:3 font:_label.font width:self.width];
-    CGSize willExpandLabelSize = [_willExpandLabelContent safeSizeWithFont:_label.font];
-    _label.frame = CGRectMake(0, 0, self.width, willExpandLabelSize.height);
+//    _willExpandLabelContent = [self.attributedString.string getStringWithLineNum:3 font:_label.font width:self.width];
+//    CGSize willExpandLabelSize = [_willExpandLabelContent safeSizeWithFont:_label.font];
+//    _label.frame = CGRectMake(0, 0, self.width, willExpandLabelSize.height);
     _label.text = _willExpandLabelContent;
     [self addSubview:_label];
 }
@@ -46,7 +46,7 @@
     if ([_willExpandLabelContent isEqualToString:self.attributedString.string]) {
         return;
     }
-    _expandBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, _label.bottom, 50, 50)];
+//    _expandBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, _label.bottom, 50, 50)];
 //    _expandBtn setTitle:<#(nullable NSString *)#> forState:<#(UIControlState)#>
 }
 
