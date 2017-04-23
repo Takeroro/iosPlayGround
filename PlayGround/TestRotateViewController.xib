@@ -31,10 +31,10 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="n6c-mY-eva" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-80" id="IAM-lg-urk"/>
-                <constraint firstItem="n6c-mY-eva" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jAB-nL-FkC"/>
+                <constraint firstItem="n6c-mY-eva" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" priority="250" constant="-80" id="IAM-lg-urk"/>
+                <constraint firstItem="n6c-mY-eva" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" priority="250" id="jAB-nL-FkC"/>
             </constraints>
-            <point key="canvasLocation" x="-194" y="-73"/>
+            <point key="canvasLocation" x="-409" y="-84"/>
         </view>
     </objects>
 </document>

@@ -8,6 +8,7 @@
 
 #import "TestRotateViewController.h"
 #import "DRGlobalMacro.h"
+#import <Masonry.h>
 
 typedef enum : NSUInteger {
     rotateState_normal,
@@ -34,7 +35,16 @@ typedef enum : NSUInteger {
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initMyImageView];
+    [_containerView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view).priorityHigh();
+        make.size.mas_equalTo(CGSizeMake(50, 50));
+    }];
+    
+//    [self initMyImageView];
+    
+    _containerView.backgroundColor = [UIColor blueColor];
+    [super updateViewConstraints];
+//    [self.view layoutIfNeeded];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,11 +58,30 @@ typedef enum : NSUInteger {
     [_myImageView removeFromSuperview];
 }
 
+- (void)viewWillLayoutSubviews
+{
+//    [self initMyImageView];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [self initMyImageView];//经过mac_update后，知道这里_containerView的frame才是我们想要的。
+}
+
+- (BOOL)shouldAutorotate
+{
+    return NO;
+}
+
 #pragma mark - private
 
 - (void)initMyImageView
 {
     _myImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 180, 180)];
+//    _myImageView.center = _containerView.center;//这句有毒，_continerView.center是相对于self.View的，没用
+    
+    _myImageView.center = CGPointMake(_containerView.frame.size.width/2, _containerView.frame.size.height/2);
+    
     _myImageView.image = [UIImage imageNamed:@"guoguo"];
     _myImageView.userInteractionEnabled = YES;
     [_containerView addSubview:_myImageView];
@@ -88,6 +117,7 @@ typedef enum : NSUInteger {
         
         _myImageView.frame = _orginFrame;
     }];
+    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait animated:YES];
 }
 
 - (void)enterFullScreen
@@ -108,6 +138,8 @@ typedef enum : NSUInteger {
     } completion:^(BOOL finished) {
         _state = rotateState_rotated;
     }];
+    
+    [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight animated:YES];
 }
 
 /*
