@@ -58,6 +58,7 @@
 		55B37F3C1EA0A8A30079A674 /* MayExpandTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B37F3A1EA0A8A30079A674 /* MayExpandTableViewCell.xib */; };
 		55EEEE351E0A2A150069EBCA /* PlayInvocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EEEE341E0A2A150069EBCA /* PlayInvocationVC.m */; };
 		6113503885E1442370D442AD /* libPods-PlayGroundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E30966F957FE093EE868CB /* libPods-PlayGroundTests.a */; };
+		A5B00F411EB100EC00D75CB0 /* ExpandableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B00F401EB100EC00D75CB0 /* ExpandableCellView.m */; };
 		A64F48F98EE51E562938B096 /* libPods-PlayGroundUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019EB35077561059620D1718 /* libPods-PlayGroundUITests.a */; };
 		F0A37B462125A8F70E88C905 /* libPods-PlayGround.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 327969AA1CF194BEB551AC61 /* libPods-PlayGround.a */; };
 /* End PBXBuildFile section */
@@ -178,6 +179,8 @@
 		55EEEE331E0A2A150069EBCA /* PlayInvocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayInvocationVC.h; sourceTree = "<group>"; };
 		55EEEE341E0A2A150069EBCA /* PlayInvocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayInvocationVC.m; sourceTree = "<group>"; };
 		65E30966F957FE093EE868CB /* libPods-PlayGroundTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlayGroundTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B00F3F1EB100EC00D75CB0 /* ExpandableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableCellView.h; sourceTree = "<group>"; };
+		A5B00F401EB100EC00D75CB0 /* ExpandableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandableCellView.m; sourceTree = "<group>"; };
 		C8520EA958AD77C1F318AADD /* Pods-PlayGroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayGroundUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayGroundUITests/Pods-PlayGroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDBF493D4BEFF292A50AD55A /* Pods-PlayGroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayGroundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayGroundUITests/Pods-PlayGroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D02D47A3527BA42DD3806AAB /* Pods-PlayGround.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayGround.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayGround/Pods-PlayGround.debug.xcconfig"; sourceTree = "<group>"; };
@@ -322,6 +325,8 @@
 				55B2D9561DC35D1200B46A1D /* CategoryController.m */,
 				5581235D1EA629010022153E /* ExpandableView.h */,
 				5581235E1EA629010022153E /* ExpandableView.m */,
+				A5B00F3F1EB100EC00D75CB0 /* ExpandableCellView.h */,
+				A5B00F401EB100EC00D75CB0 /* ExpandableCellView.m */,
 				552E2ED71E9613260079D730 /* Category */,
 				55274D491E80FEF20095AC1F /* Demos */,
 				5543631E1DC328B600A078D0 /* Assets.xcassets */,
@@ -818,6 +823,7 @@
 				5543631A1DC328B600A078D0 /* TestSrollableHeaderController.m in Sources */,
 				55274D441E80D47E0095AC1F /* RunTimeViewController.m in Sources */,
 				55620EF21E5D2E5700F2D58A /* AppStoreDemoViewController.m in Sources */,
+				A5B00F411EB100EC00D75CB0 /* ExpandableCellView.m in Sources */,
 				5581235F1EA629010022153E /* ExpandableView.m in Sources */,
 				552E2EDD1E962D5B0079D730 /* DRScrollLabel.m in Sources */,
 				555C626E1E7A3C6D00A9FA7A /* CoreGraphicViewController.m in Sources */,

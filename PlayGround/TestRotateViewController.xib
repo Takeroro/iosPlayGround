@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestRotateViewController">
             <connections>
                 <outlet property="containerView" destination="n6c-mY-eva" id="jmx-od-mxb"/>
+                <outlet property="expandView" destination="b41-sE-VDk" id="YmP-fa-Ynl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,13 +29,23 @@
                         <constraint firstAttribute="width" constant="240" id="X3K-9B-QZD"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b41-sE-VDk" customClass="ExpandableCellView">
+                    <rect key="frame" x="67" y="66" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.44279106700778015" green="0.93040458719264929" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="a7W-UY-hHP"/>
+                        <constraint firstAttribute="width" constant="240" id="olW-mP-8MD"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="n6c-mY-eva" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" priority="250" constant="-80" id="IAM-lg-urk"/>
+                <constraint firstItem="b41-sE-VDk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="66" id="LRY-Q0-7pQ"/>
+                <constraint firstItem="b41-sE-VDk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RWA-gW-hz4"/>
                 <constraint firstItem="n6c-mY-eva" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" priority="250" id="jAB-nL-FkC"/>
             </constraints>
-            <point key="canvasLocation" x="-409" y="-84"/>
+            <point key="canvasLocation" x="-597" y="-123"/>
         </view>
     </objects>
 </document>

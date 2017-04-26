@@ -9,13 +9,14 @@
 #import "TestRotateViewController.h"
 #import "DRGlobalMacro.h"
 #import <Masonry.h>
+#import "ExpandableCellView.h"
 
 typedef enum : NSUInteger {
     rotateState_normal,
     rotateState_rotated,
 } rotateState;
 
-@interface TestRotateViewController ()
+@interface TestRotateViewController ()<ExpandableCellViewDelegate>
 {
     rotateState _state;
     
@@ -24,6 +25,7 @@ typedef enum : NSUInteger {
     CGRect _rectInWindow;
     
     UIImageView *_myImageView;
+    __weak IBOutlet ExpandableCellView *expandView;
 }
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
@@ -45,6 +47,7 @@ typedef enum : NSUInteger {
     _containerView.backgroundColor = [UIColor blueColor];
     [super updateViewConstraints];
 //    [self.view layoutIfNeeded];
+    [self initExpandView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,6 +77,12 @@ typedef enum : NSUInteger {
 }
 
 #pragma mark - private
+
+- (void)initExpandView
+{
+    [expandView setString:@"hahah" withLabelHeight:50 btnHeight:60];
+    expandView.delegate = self;
+}
 
 - (void)initMyImageView
 {
@@ -140,6 +149,15 @@ typedef enum : NSUInteger {
     }];
     
     [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight animated:YES];
+}
+
+- (void)expandableViewStateChange:(BOOL)isExpand
+{
+    if (isExpand) {
+        [expandView setString:@"hahahahababallblblbbblb阿斯顿发送到发送到阿萨德发毒誓hahahdiunilaomuhi" withLabelHeight:100 btnHeight:60];
+    } else {
+        [expandView setString:@"hahahaha" withLabelHeight:50 btnHeight:60];
+    }
 }
 
 /*
