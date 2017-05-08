@@ -22,6 +22,7 @@
 #import "CoreGraphicViewController.h"
 #import "RunTimeViewController.h"
 #import "TestRotateViewController.h"
+#import "TialViewController.h"
 
 @interface CategoryController ()
 {
@@ -55,6 +56,7 @@
     [_dataArray addObject:[CoreGraphicViewController class]];
     [_dataArray addObject:[RunTimeViewController class]];
     [_dataArray addObject:[TestRotateViewController class]];
+    [_dataArray addObject:[TialViewController class]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -177,6 +179,12 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 15: {
+            TialViewController *vc = [[TialViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+
 
     }
 }
